@@ -1,0 +1,110 @@
+/* MOBILE FIRST */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f4f4;
+}
+
+/* Header */
+
+.header{
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* GRID */
+
+.contenedor-grid{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 20px;
+}
+
+/* FLEXBOX */
+
+.contenido{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.tarjeta{
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.sidebar{
+    background-color: lightgray;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.imagen-principal{
+    width: 100%;
+    border-radius: 10px;
+}
+
+.footer{
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+/* TABLET */
+
+@media(min-width: 768px){
+
+    .contenedor-grid{
+        grid-template-columns: 2fr 1fr;
+    }
+
+    .contenido{
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .tarjeta{
+        flex: 1;
+    }
+}
+
+/* ESCRITORIO */
+
+@media(min-width: 1024px){
+
+    body{
+        font-size: 18px;
+    }
+
+    .header{
+        padding: 40px;
+    }
+
+}
+
+#btn-arriba{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 15px;
+    border: none;
+    background-color: #222;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+#btn-arriba:hover{
+    background-color: #444;
+}
